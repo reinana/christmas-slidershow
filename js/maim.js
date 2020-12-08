@@ -14,16 +14,16 @@
     }
     
     let star = new Ornament("p0", "Star", 300, "img/decoration-1791601_640.png");
-    let bell = new Ornament("p1", "Bell", 200, "https://cdn.pixabay.com/photo/2016/11/02/14/29/christmas-1791779_960_720.png");
-    let green = new Ornament("p2", "Green", 100, "https://cdn.pixabay.com/photo/2016/11/10/19/10/bauble-1814975_960_720.png");
-    let yellow = new Ornament("p3", "Yellow", 100, "https://cdn.pixabay.com/photo/2015/12/09/13/15/christmas-bauble-1084697_960_720.png");
-    let red = new Ornament("p4", "Red", 100, "https://cdn.pixabay.com/photo/2015/08/05/08/36/ball-875766_960_720.png");
-    let blue = new Ornament("p5", "Blue", 100, "https://cdn.pixabay.com/photo/2015/08/05/08/38/ball-875770_960_720.png");
-    let snowman = new Ornament("p6", "Snowman", 200, "https://cdn.pixabay.com/photo/2017/11/19/13/28/snow-man-2962777_960_720.png");
-    let reindeer = new Ornament("p7", "Reindeer", 200, "https://cdn.pixabay.com/photo/2018/12/17/16/07/christmas-3880680_960_720.png");
-    let santa = new Ornament("p8", "Santa", 200, "https://cdn.pixabay.com/photo/2018/02/04/13/40/christmas-3129893_960_720.png");
+    let bell = new Ornament("p1", "Bell", 200, "img/christmas-1791779_640.png");
+    let pink = new Ornament("p2", "Pink", 100, "img/bauble-1814943_640.png");
+    let yellow = new Ornament("p3", "Yellow", 100, "img/bauble-1814949_640.png");
+    let red = new Ornament("p4", "Red", 100, "img/bauble-1814941_640.png");
+    let blue = new Ornament("p5", "Blue", 100, "img/bauble-1814972_640.png");
+    let snowman = new Ornament("p6", "Snowman", 200, "img/snowman-2962777_640.png");
+    let reindeer = new Ornament("p7", "Reindeer", 200, "img/christmas-3880680_640.png");
+    let santa = new Ornament("p8", "Santa", 200, "img/christmas-3129893_640.png");
     
-    const ornaments = [star,bell,green,yellow,red,blue,snowman,reindeer,santa];
+    const ornaments = [star,bell,pink,yellow,red,blue,snowman,reindeer,santa];
     
     //ボタン作成
     let btn1 = document.createElement("button");
@@ -175,7 +175,7 @@
     //greenImg
     let greenImg = document.createElement("img");
     greenImg.classList.add("greenImg", "wh-10","d-none");
-    greenImg.src = green.url;
+    greenImg.src = pink.url;
     greenImg.setAttribute("id", "p2");
     //yellowImg
     let yellowImg = document.createElement("img");
