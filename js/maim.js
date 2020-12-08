@@ -13,7 +13,7 @@
         
     }
     
-    let star = new Ornament("p0", "Star", 300, "https://cdn.pixabay.com/photo/2016/11/02/14/04/decoration-1791601_960_720.png");
+    let star = new Ornament("p0", "Star", 300, "img/decoration-1791601_640.png");
     let bell = new Ornament("p1", "Bell", 200, "https://cdn.pixabay.com/photo/2016/11/02/14/29/christmas-1791779_960_720.png");
     let green = new Ornament("p2", "Green", 100, "https://cdn.pixabay.com/photo/2016/11/10/19/10/bauble-1814975_960_720.png");
     let yellow = new Ornament("p3", "Yellow", 100, "https://cdn.pixabay.com/photo/2015/12/09/13/15/christmas-bauble-1084697_960_720.png");
