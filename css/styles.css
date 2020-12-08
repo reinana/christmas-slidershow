@@ -1,0 +1,154 @@
+body{
+    margin: auto;
+}
+.machinecontainer{
+    border: 4px solid firebrick;
+    background-color: firebrick;
+    border-radius: 10px;
+
+    
+}
+.img-box{
+    background-color: #f8f8f8;
+    border: 3px dashed rgb(244, 201, 201);
+    border-radius: 10px;
+    transition: all 2s linear;
+    height: 50vh;
+    
+}
+.full-width{
+    width:100%;
+    flex-shrink: 0;
+}
+.w-80{
+    width: 80%;
+}
+.w-50{
+    width: 50%;
+}
+.w-20{
+    width: 20%;
+}
+
+.tree{
+    margin-top: 4em;
+    margin-bottom: 4em;
+    position: relative;
+    height: 500px;
+}
+.tree-box {
+    position: absolute;
+    height: 500px;
+       
+}
+.starImg{
+    width: 20vh;
+    height: 20vh;
+}
+/* d-noneした時高さが必要 */
+.ornament-1{
+    height: 20vh;
+}
+.ornament-2{
+    height: 20vh;
+}
+.ornament-3{
+    height: 20vh;
+}
+
+.wh-10{
+    width: 10vh;
+    height: 10vh;
+}
+h4,p{
+    font-family: 'Comic Sans MS';
+    
+}
+.text-box{
+    background-color: #f8f8f8;
+    border: 3px dashed rgb(244, 201, 201);
+    border-radius: 10px;
+    
+}
+
+
+.no{
+    font-family: 'Comic Sans MS';
+    color: fff;
+    
+    
+}
+input[type="text"]{
+  width: 100%;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.deplete-animation{
+    animation: deplete .3s ease forwards;
+}
+
+.expand-animation{
+    animation: deplete .3s ease reverse forwards;
+}
+
+@keyframes    deplete {
+    0%{
+        width: 100%;
+        opacity: 1;
+    }
+    100%{
+        width: 0%;
+        opacity: 0;
+    } 
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+.star-animation{
+    animation: rotateStar 2s infinite;
+}
+@keyframes rotateStar   {
+    0% {
+        transform:scale(.4) ;
+    }
+    25% {
+        transform:scale(1.5) rotate(360deg); 
+    }
+    50% {
+        transform:scale(.4) rotate(0deg); 
+    }
+    75% {
+        transform:scale(1.5) rotate(-360deg); 
+    }
+    100% {    
+        transform:scale(.4) rotate(0deg); 
+    }
+}
+
+.ornament-animation{
+   animation: swing 2s infinite; 
+}
+
+@keyframes swing   {
+    0% {
+        transform:rotate(0deg);
+    }
+    25% {
+        transform: rotate(90deg); 
+    }
+    50% {
+        transform: rotate(0deg); 
+    }
+    75% {
+        transform: rotate(-90deg); 
+    }
+    100% {    
+        transform: rotate(0deg); 
+    }
+}

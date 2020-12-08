@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja"
+<head>
+    <meta charset="utf-8">
+    <title>ChristmasBendingMachine</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+    <!--bootstrap-->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    
+</head>
+
+<body>
+    <div class="container bg-white">
+        <!-- chirstmastree -->
+        <div class="tree-container d-flex justify-content-center row">
+            <img class="tree w-80" src="\img\christmas-tree-christmas-1796131_640.png">
+            <div class="tree-box d-flex flex-column" id="tree-box"></div>
+            
+        </div>
+        <!-- vending machine -->
+        <div class="machinecontainer d-flex row col-12 p-2 m-2">
+            <div class="left-box col-7 d-flex flex-column align-items-center">
+                <div class="img-box d-flex flex-column align-items-center my-2 h-120">
+                    <h4 class="text-center mt-2">ornament</h4>
+                    <div class="col-10 col-lg-8" id="item-img"></div>
+                    
+                </div>
+                <div class="push-btn d-flex justify-content-around">
+                    <button type="button" class="btn btn-danger btn-lg m-2 px-4" id="push">Push</button>
+                    <button type="button" class="btn btn-danger btn-lg m-2 px-4" id="play">Play</button>
+                </div>
+            </div>
+            <div class="right-box col-5 d-flex flex-column">
+                <div class="text-box my-2 text-center d-flex flex-column align-items-center ">
+                    <h4 class="mt-2" id="item-name"></h4>
+                    <p id="item-price"></p>
+                </div>
+                <label class="no my-2 px-2">No.<input type="text" id="inputNum" disabled></label>
+                <div class="btn-box row justify-content-around" id="btn-box"></div>
+            </div>
+        </div>
+    </div>
+    <script src="js/maim.js"></script>
+</body>
+</html>
